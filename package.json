@@ -2,21 +2,29 @@
   "name": "my-money-backend",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/eduardo-nakamura/my-money-app-cod3r-backend#readme",
+  "bugs": {
+    "url": "https://github.com/eduardo-nakamura/my-money-app-cod3r-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardo-nakamura/my-money-app-cod3r-backend.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",
     "production": "pm2 start src/loader.js --name my-money-backend"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-query-int": "^1.0.1",
     "lodash": "^4.17.4",
-    "mongoose": "^4.7.0",
+    "mongoose": "^4.13.21",
     "mongoose-paginate": "^5.0.3",
     "node-restful": "^0.2.5",
     "pm2": "^2.1.5"
