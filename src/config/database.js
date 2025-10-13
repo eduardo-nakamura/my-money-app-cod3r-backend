@@ -1,10 +1,12 @@
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost/mymoney'
-module.exports = mongoose.connect('MONGO_URL',
+module.exports = mongoose.connect(MONGO_URL,
     {
         useNewUrlParser: true,
-        useUnifiedTopology: true
+        useUnifiedTopology: true,
+        useFindAndModify: false,
+        useCreateIndex: true
     })
 
 
